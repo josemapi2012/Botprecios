@@ -1,3 +1,6 @@
-from redmi9 import check_price
-
-check_price()
+from Footlocker import HighMocha, CourtPurple, sbDunkHigh ,sbDunkLow
+#Footlocker
+HighMocha()
+CourtPurple()
+sbDunkLow()
+sbDunkHigh()
