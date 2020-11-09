@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-import smtpd
+import time
 
 def AirForce():
     URL = 'https://www.supremenewyork.com/shop/all/shoes'
