@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
-import time
+import datetime
+import os
 
 def AirForce():
     URL = 'https://www.supremenewyork.com/shop/all/shoes'
@@ -15,7 +16,7 @@ def AirForce():
     #Busca todos los span de la pagina, despues crea un loop en el cual si contiene la palabra guardada en la variable zapas diga que ya esta disponible esas zapatillas
     for i in soup.findAll("a"):
         if (i.get_text().find(zapas) != -1):
-            print("Se encontro la zapatilla")
+            os.system(f"telegram-send 'Las Air Force 1 Estan disponible en la web de supreme'")
             break
         else:
             x = datetime.datetime.now()
