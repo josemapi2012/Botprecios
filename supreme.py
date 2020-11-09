@@ -17,3 +17,8 @@ def AirForce():
         if (i.get_text().find(zapas) != -1):
             print("Se encontro la zapatilla")
             break
+        else:
+            x = datetime.datetime.now()
+            f = open("log.txt","a")
+            f.write(f"{x} - Todavia no estan esos zapatos en supremestore \n")
+            f.close()
