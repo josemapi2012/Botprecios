@@ -13,7 +13,10 @@ def redmi9():
         price = soup.find(id="priceblock_ourprice").get_text()
         converted_price =(price[0:3])
     except:
-        print("Erro al intentar obtener el precio del movil")
+        x = datetime.datetime.now()
+        f = open("log.txt","a")
+        f.write(f"{x} - Error al obtener el precio del redmi 9 \n")
+        f.close()
     
     if (int(converted_price) < 146):
     	os.system(f"telegram-send 'El precio del movil es '{converted_price}")
@@ -31,7 +34,10 @@ def switch():
         price = soup.find(id="priceblock_ourprice").get_text()
         converted_price =(price[0:3])
     except:
-        print("Erro al intentar obtener el precio del movil")
+        x = datetime.datetime.now()
+        f = open("log.txt","a")
+        f.write(f"{x} - Error al obtener el precio de la switch \n")
+        f.close()
     
     
     if (int(converted_price) < 146):
