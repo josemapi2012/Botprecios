@@ -23,3 +23,4 @@ def AirForce():
             f = open("log.txt","a")
             f.write(f"{x} - Todavia no estan esos zapatos en supremestore \n")
             f.close()
+            break
