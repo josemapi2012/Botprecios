@@ -105,7 +105,7 @@ def prueba():
 
     zapas = "Air"
     #Busca todos los span de la pagina, despues crea un loop en el cual si contiene la palabra guardada en la variable zapas diga que ya esta disponible esas zapatillas
-    for i in soup.findAll("span"):
+    for i in soup.findAll("span", {"class" : "ProductName-primary"}):
         if (i.get_text().find(zapas) != -1):
             os.system(f"telegram-send 'La prueba fue completada con exito'")
             break
