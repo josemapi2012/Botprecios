@@ -5,7 +5,7 @@ import os
 
 
 def HighMocha():
-    URL = 'https://www.footlocker.es/es/busqueda?q=Jordan+1+High+Mocha'
+    URL = 'https://www.footlocker.es/es/search?query=Jordan%201%20High%20Mocha'
 
     headers = {"User-Agent":'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36 Edg/86.0.622.63'}
     
@@ -15,7 +15,7 @@ def HighMocha():
 
     zapas = "Jordan 1 High Mocha"
     #Busca todos los span de la pagina, despues crea un loop en el cual si contiene la palabra guardada en la variable zapas diga que ya esta disponible esas zapatillas
-    for i in soup.findAll("span"):
+    for i in soup.findAll("span", {"class" : "ProductName-primary"}):
         if (i.get_text().find(zapas) != -1):
             os.system(f"telegram-send 'Una variante de las High Mocha esta disponible en Footlocker'")
             break
@@ -27,7 +27,7 @@ def HighMocha():
             break
 
 def CourtPurple():
-    URL = 'https://www.footlocker.es/es/busqueda?q=Air+Jordan+1+Low'
+    URL = 'https://www.footlocker.es/es/category/collection/jordan/1-low.html'
 
     headers = {"User-Agent":'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36 Edg/86.0.622.63'}
     
@@ -37,7 +37,7 @@ def CourtPurple():
 
     zapas = "Air Jordan 1 Low"
     #Busca todos los span de la pagina, despues crea un loop en el cual si contiene la palabra guardada en la variable zapas diga que ya esta disponible esas zapatillas
-    for i in soup.findAll("span"):
+    for i in soup.findAll("span", {"class" : "ProductName-primary"}):
         if (i.get_text().find(zapas) != -1):
             os.system(f"telegram-send 'Una variante de las Jordan 1 Low esta disponible en Footlocker'")
             break
@@ -49,7 +49,7 @@ def CourtPurple():
             break
 
 def sbDunkLow():
-    URL = 'https://www.footlocker.es/es/busqueda?q=nike+sb+dunk+low'
+    URL = 'https://www.footlocker.es/es/search?query=nike%20sb%20Dunk%20Low'
 
     headers = {"User-Agent":'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36 Edg/86.0.622.63'}
     
@@ -59,7 +59,7 @@ def sbDunkLow():
 
     zapas = "nike sb dunk low"
     #Busca todos los span de la pagina, despues crea un loop en el cual si contiene la palabra guardada en la variable zapas diga que ya esta disponible esas zapatillas
-    for i in soup.findAll("span"):
+    for i in soup.findAll("span", {"class" : "ProductName-primary"}):
         if (i.get_text().find(zapas) != -1):
             os.system(f"telegram-send 'Una variante de las sb Dunk Low esta disponible en Footlocker'")
             break
@@ -72,7 +72,7 @@ def sbDunkLow():
 
 
 def sbDunkHigh():
-    URL = 'https://www.footlocker.es/es/busqueda?q=nike+sb+dunk+high'
+    URL = 'https://www.footlocker.es/es/search?query=nike%20sb%20Dunk%20High'
 
     headers = {"User-Agent":'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36 Edg/86.0.622.63'}
     
@@ -82,7 +82,7 @@ def sbDunkHigh():
 
     zapas = "nike sb dunk high"
     #Busca todos los span de la pagina, despues crea un loop en el cual si contiene la palabra guardada en la variable zapas diga que ya esta disponible esas zapatillas
-    for i in soup.findAll("span"):
+    for i in soup.findAll("span", {"class" : "ProductName-primary"}):
         if (i.get_text().find(zapas) != -1):
             os.system(f"telegram-send 'Una variante de las sb Dunk High esta disponible en Footlocker'")
             break
