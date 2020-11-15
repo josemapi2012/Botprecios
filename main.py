@@ -1,4 +1,4 @@
-from Footlocker import HighMocha, CourtPurple, sbDunkHigh ,sbDunkLow
+from Footlocker import HighMocha, CourtPurple, sbDunkHigh ,sbDunkLow, prueba
 from Amazon  import redmi9, switch
 from supreme import AirForce
 import time
@@ -13,5 +13,6 @@ while TRUE:
     CourtPurple()
     sbDunkLow()
     sbDunkHigh()
+    prueba()
     #supreme
     AirForce()
