@@ -1,5 +1,5 @@
-from Footlocker import HighMocha, CourtPurple, sbDunkHigh ,sbDunkLow, prueba
-from Amazon  import redmi9, switch
+from Footlocker import HighMocha, CourtPurple, sbDunkHigh ,sbDunkLow
+from Amazon  import switch
 from supreme import AirForce
 import time
 
@@ -12,6 +12,5 @@ while True:
     CourtPurple()
     sbDunkLow()
     sbDunkHigh()
-    prueba()
     #supreme
     AirForce()
