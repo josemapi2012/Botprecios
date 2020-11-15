@@ -27,7 +27,7 @@ def HighMocha():
             break
 
 def CourtPurple():
-    URL = 'https://www.footlocker.es/es/category/collection/jordan/1-low.html'
+    URL = 'https://www.footlocker.es/es/search?query=Nike%20Air%20Jordan%201%20High%20Court%20Purple'
 
     headers = {"User-Agent":'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36 Edg/86.0.622.63'}
     
