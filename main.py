@@ -6,7 +6,6 @@ import time
 while True:
     time.sleep(300)
     #Amazon
-    redmi9()
     switch()
     #Footlocker
     HighMocha()
