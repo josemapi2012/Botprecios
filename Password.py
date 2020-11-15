@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import datetime
 import os
 
-def passworld():
+def password():
     URL = 'https://cactusplantfleamarket.com/password'
 
     headers = {"User-Agent":'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36 Edg/86.0.622.63'}
