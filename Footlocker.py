@@ -92,3 +92,26 @@ def sbDunkHigh():
             f.write(f"{x} - No esta disponible las sb Dunk High en footlocker \n")
             f.close()
             break
+
+
+def prueba():
+    URL = 'https://www.footlocker.es/es/search?query=Air'
+
+    headers = {"User-Agent":'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36 Edg/86.0.622.63'}
+    
+    page = requests.get(URL, headers=headers)
+
+    soup = BeautifulSoup(page.content, 'lxml')
+
+    zapas = "Air"
+    #Busca todos los span de la pagina, despues crea un loop en el cual si contiene la palabra guardada en la variable zapas diga que ya esta disponible esas zapatillas
+    for i in soup.findAll("span"):
+        if (i.get_text().find(zapas) != -1):
+            os.system(f"telegram-send 'La prueba fue completada con exito'")
+            break
+        else:
+            x = datetime.datetime.now()
+            f = open("log.txt","a")
+            f.write(f"{x} - No funciono la prueba \n")
+            f.close()
+            break
