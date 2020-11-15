@@ -1,4 +1,5 @@
-from Footlocker import HighMocha, CourtPurple, sbDunkHigh ,sbDunkLow
+from Footlocker import sbDunkHigh, sbDunkLow, HighMocha, CourtPurple
+from Password import password
 from Amazon  import switch
 from supreme import AirForce
 import time
@@ -8,9 +9,11 @@ while True:
     #Amazon
     switch()
     #Footlocker
-    HighMocha()
-    CourtPurple()
-    sbDunkLow()
-    sbDunkHigh()
+    #HighMocha()
+    #CourtPurple()
+    #sbDunkLow()
+    #sbDunkHigh()
     #supreme
     AirForce()
+    #Password
+    password()
