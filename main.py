@@ -3,7 +3,7 @@ from Amazon  import redmi9, switch
 from supreme import AirForce
 import time
 
-while TRUE:
+while True:
     time.sleep(300)
     #Amazon
     redmi9()
